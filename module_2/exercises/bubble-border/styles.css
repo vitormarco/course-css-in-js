@@ -1,0 +1,50 @@
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 64px;
+    border: 4px solid palevioletred;
+    position: relative;
+}
+
+.circle { 
+    border: inherit;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+}
+
+.big.circle {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
+}
+
+.medium.circle {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    top: 60px;
+    left: -27px;
+}
+
+.small.circle {
+    width: 20px;
+    height: 20px;
+    left: 60px;
+    top: -15px;
+}
+
+.box .content  {
+    padding-block: 32px;
+    padding-inline: 48px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+
+

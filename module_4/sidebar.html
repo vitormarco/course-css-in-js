@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            display: flex;
+        }
+        nav {
+            width: 220px;
+            flex-shrink: 1000000;
+        }
+        main {
+            flex-grow: 1;
+        }
+        nav, main {
+            padding: 16px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+            <h2>Navigation
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </h2>
+        </nav>
+        <main>
+            <h1>Welcome to ThingStore</h1>
+            <p>Please enjoy your time shopping!</p>
+        </main>
+    </section>
+</body>
+</html>

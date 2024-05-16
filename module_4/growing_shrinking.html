@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;            
+            padding: 0;
+            margin: 0;
+            background: hsl(0deg 0 15%);
+        }
+        .row {
+            display: flex;
+            height: 400px;
+        }
+        nav, aside {
+            flex-grow: 1;
+            background-color: purple;
+        }
+        main {
+            flex-grow: 3;
+            background-color: blue;
+        }
+    /*
+        * como funciona?
+        total de conteúdo é 5(1 nav 1 aside 3 main)
+        então é aplicado uma proporção (ratio)
+        ou seja nav terá 1/5 do tamanho 20%, assim como aside
+        e main terá 3/5 do tamanho (60%);
+    */
+    </style>
+</head>
+<body>
+    <div class="row">
+        <nav></nav>
+        <main></main>
+        <aside></aside>
+    </div>
+</body>
+</html>

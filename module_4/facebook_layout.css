@@ -1,0 +1,49 @@
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav, aside, main {
+    border: 3px solid;
+}
+
+nav {
+    border-color: hsl(0deg 100% 50%);
+    background: hsl(0deg 100% 50% / 0.2);
+}
+
+aside {
+    border-color: hsl(125deg 75% 45%);
+    background: hsl(125deg 75% 45% / 0.2);
+}
+
+main {
+    border-color: hsl(300deg 75% 60%);
+    background: hsl(300deg 75% 60% / 0.2)
+}
+
+
+/* TODO */
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+}
+
+nav, aside.contacts {
+    min-width: 150px;
+    max-width: 250px;
+    flex: 0 999999 250px;
+}
+
+main {
+    flex: 1 1 500px;
+}
+
+@media (max-width: 43.75rem) {
+    nav {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+article {
+    margin: 8px;
+    border-radius: 16px;
+    height: 200px;
+    background: hsl(240deg 90% 90%);
+    border: 2px solid hsl(240deg 80% 60%);
+}
+
+article:first-child {
+    background: hsl(335deg 90% 90%);
+    border-color: hsl(335deg 80% 60%);
+}
+
+article:last-child {
+    background: hsl(45deg 90% 90%);
+    border-color: hsl(45deg 80% 60%);
+}
+
+/* TODO */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 0 1 150px;
+}

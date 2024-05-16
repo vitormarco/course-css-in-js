@@ -1,0 +1,69 @@
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+  
+body {
+    background: hsl(238deg 28% 73%);
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+article.card {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px hsl(238deg 28% 50% / 0.5);
+    position: relative;
+}
+
+.product-photo {
+    display: block;
+    margin: -16px;
+    margin-bottom: 12px;
+
+}
+
+.product-photo img {
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    object-position: center;
+    max-height: 260px;
+}
+
+.flag {
+    padding-left: 8px;
+    padding-right: 16px;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 500;
+    background: hsl(50deg 95% 85%);
+    box-shadow: 0px 1px 2px hsl(50deg 45% 45% / 0.2);
+    border-radius: 4px 1em 1em 4px;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.content h2 .subtitle {
+    font-size: 1rem;
+    color: hsl(0deg 0% 30%);
+    font-weight: 300;
+}
