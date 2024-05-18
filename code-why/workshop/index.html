@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/assets/css/global.css">
+    <link rel="stylesheet" href="./public/assets/css/header.css">
+    <link rel="stylesheet" href="./public/assets/css/shell.css">
+    <link rel="stylesheet" href="./public/assets/css/shoe-grid.css">
+</head>
+<body>
+    <header>
+        <div class="super-header">
+            <span class="super-header__marketing-message">
+                Free shipping on domestic orders over $75!
+            </span>
+            <label for="" class="super-header__search">
+                <div class="visually-hidden">Search</div>
+                <div class="super-header__search__icon">
+                    <svg class="super-header__search__search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <input class="super-header__search__input" type="text" placeholder="Search...">
+            </label>
+            <a href="./help.html" class="super-header__help-link">Help</a>
+            <button class="super-header__shop unstyled-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </button>
+        </div>
+        <div class="main-header">
+            <div class="main-header__side">
+                <a href="/" class="main-header__logo">
+                    <h1 class="main-header__logo__title">Sole&amp;Ankle</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="">Sale</a>
+                <a href="">New&nbsp;Releases</a>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Collections</a>
+            </nav>
+            <div class="main-header__side"></div>
+        </div>
+    </header>
+    <main>
+        <div class="columns">
+            <div class="main-column">
+                <header class="main-column__header">
+                    <h2 class="main-column__header__title">Running</h2>
+                    <label class="main-column__header__select">
+                        <span class="main-column__header__select__visible-label">Sort</span>
+                        <div class="main-column__header__select__wrapper">
+                            <select class="main-column__header__select__wrapper__native" name="" id="">
+                                <option value="newest">Newest Releases</option>
+                                <option value="price">Price</option>
+                            </select>
+                            <span class="main-column__header__select__wrapper__display-bit">
+                                Newest Releases
+                                <div class="main-column__header__select__wrapper__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                </div>
+                            </span>
+                        </div>
+                    </label>
+                </header>
+                <span class="main-column__spacer"></span>
+                <div class="shoe-grid">
+                    <a class="shoe-card" href="/slug/tech-challenge">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag just-released">Just Released!</span>
+                                <img src="./public/assets/img/tech-challenge.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">NikeCourt Tech Challenge 20</h3>
+                                <span class="shoe-card__card__row__price">&#36 165</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">2 Colors</p>
+                            </div>
+                        </article>
+                    </a>
+                    <a class="shoe-card" href="/slug/metcon-5">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag on-sale">Sale</span>
+                                <img src="./public/assets/img/metcon-5.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike Metcon 5 AMP</h3>
+                                <span class="shoe-card__card__row__price sale">&#36 165</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">1 Color</p>
+                                <span class="shoe-card__card__row__new-price">&#36 125</span>
+                            </div>
+                        </article>
+                    </a>
+                    <a class="shoe-card" href="/slug/phantom">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag just-released">Just Released!</span>
+                                <img src="./public/assets/img/phantom.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike Phantom Vision</h3>
+                                <span class="shoe-card__card__row__price">&#36 165</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">4 Colors</p>
+                            </div>
+                        </article>
+                    </a>    
+                    <a class="shoe-card" href="/slug/pegasus">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <img src="./public/assets/img/pegasus.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike Air Zoom Pegasus</h3>
+                                <span class="shoe-card__card__row__price">&#36 165</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">1 Color</p>
+                            </div>
+                        </article>
+                    </a>                 
+                    <a class="shoe-card" href="/slug/joyride">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag on-sale">Sale</span>
+                                <img src="./public/assets/img/joyride.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike Joyride Dual Run</h3>
+                                <span class="shoe-card__card__row__price sale">&#36 170</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">2 Colors</p>
+                                <span class="shoe-card__card__row__new-price">&#36 150</span>
+                            </div>
+                        </article>
+                    </a>    
+                    <a class="shoe-card" href="/slug/legend-academy">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag on-sale">Sale</span>
+                                <img src="./public/assets/img/legend-academy.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike Tiempo Legend 8</h3>
+                                <span class="shoe-card__card__row__price sale">&#36 165</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">8 Colors</p>
+                                <span class="shoe-card__card__row__new-price">&#36 125</span>
+                            </div>
+                        </article>
+                    </a>                 
+                    <a class="shoe-card" href="/slug/react-infinity">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag on-sale">Sale</span>
+                                <img src="./public/assets/img/react-infinity.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike React Infinity Pro</h3>
+                                <span class="shoe-card__card__row__price sale">&#36 160</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">1 Color</p>
+                                <span class="shoe-card__card__row__new-price">&#36 140</span>
+                            </div>
+                        </article>
+                    </a>
+                    <a class="shoe-card" href="/slug/phantom-flyknit">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <span class="shoe-card__card__img__flag on-sale">Sale</span>
+                                <img src="./public/assets/img/phantom-flyknit.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">Nike React Phantom Run Flyknit 2</h3>
+                                <span class="shoe-card__card__row__price sale">&#36 185</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">4 Colors</p>
+                                <span class="shoe-card__card__row__new-price">&#36 145</span>
+                            </div>
+                        </article>
+                    </a>   
+                    <a class="shoe-card" href="/slug/lebron">
+                        <article class="shoe-card__card">
+                            <figure class="shoe-card__card__img">
+                                <img src="./public/assets/img/lebron.jpg" alt="">
+                            </figure>
+                            <span class="shoe-card__card__spacer"></span>
+                            <div class="shoe-card__card__row">
+                                <h3 class="shoe-card__card__row__title">LeBron 17</h3>
+                                <span class="shoe-card__card__row__price">&#36 260</span>
+                            </div>
+                            <div class="shoe-card__card__row">
+                                <p class="shoe-card__card__row__colors">1 Color</p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <div class="left-column">
+                <nav class="left-column__breadcrumbs">
+                    <div class="left-column__breadcrumbs__breadcrumb">
+                        <a class="left-column__breadcrumbs__breadcrumb__link" href="/">Home</a>
+                    </div>
+                    <div class="left-column__breadcrumbs__breadcrumb">
+                        <a class="left-column__breadcrumbs__breadcrumb__link" href="/sale">Sale</a>
+                    </div>
+                    <div class="left-column__breadcrumbs__breadcrumb">
+                        <a class="left-column__breadcrumbs__breadcrumb__link" href="/sale/shoes">Shoes</a>
+                    </div>
+                </nav>
+                <span class="left-column__spacer"></span>
+                <aside class="left-column__sidebar">
+                    <a class="left-column__sidebar__link" href="/lifestyle">Lifestyle</a>
+                    <a class="left-column__sidebar__link" href="/jordan">Jordan</a>
+                    <a class="left-column__sidebar__link active" href="/running">Running</a>
+                    <a class="left-column__sidebar__link" href="/basketball">Basketball</a>
+                    <a class="left-column__sidebar__link" href="/training">Training &amp; Gym</a>
+                    <a class="left-column__sidebar__link" href="/football">Football</a>
+                    <a class="left-column__sidebar__link" href="/skateboarding">Skateboarding</a>
+                    <a class="left-column__sidebar__link" href="/us-football">American Football</a>
+                    <a class="left-column__sidebar__link" href="/baseball">Baseball</a>
+                    <a class="left-column__sidebar__link" href="/golf">Golf</a>
+                    <a class="left-column__sidebar__link" href="/tennis">Tennis</a>
+                    <a class="left-column__sidebar__link" href="/athletics">Athletics</a>
+                    <a class="left-column__sidebar__link" href="/walking">Walking</a>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

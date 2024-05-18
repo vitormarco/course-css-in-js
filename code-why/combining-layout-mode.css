@@ -1,0 +1,26 @@
+h1, p, li {
+    margin-bottom: 16px;
+}
+
+/* TODO:  */
+
+section {
+    display: flex;
+    gap: 32px;
+    border: 3px solid hotpink;
+    overflow: auto;
+}
+
+section .col {
+    flex: 1;
+    padding: 16px;
+}
+
+section .col:first-of-type {
+    position: sticky;
+    top: 0;
+}
+
+section .col + .col{
+    height: 0;
+}

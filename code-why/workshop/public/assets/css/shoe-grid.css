@@ -1,0 +1,75 @@
+.shoe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.shoe-card {
+    text-decoration: none;
+    color: inherit;
+    flex: 1 1 340px;
+}
+
+.shoe-card__card__img {
+    position: relative;
+
+    & img {
+        width: 100%;
+        border-radius:  16px 16px 4px 4px;
+    }
+}
+
+.shoe-card__card__img__flag {
+    position: absolute;
+    top: 12px;
+    right: -4px;
+    padding: 0 10px;
+    min-height: 32px;
+    line-height: 32px;
+    background-color: red;
+    color: var(--white);
+    font-size: calc(14 / 16)rem;
+    font-weight: var(--bold);
+    border-radius: 2px;
+}
+
+.shoe-card__card__img__flag.just-released {
+    background-color: var(--secondary);
+}
+
+.shoe-card__card__img__flag.on-sale {
+    background-color: var(--primary);
+}
+
+.shoe-card__card__spacer {
+    display: block;
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    min-height: 12px;
+}
+
+.shoe-card__card__row {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.shoe-card__card__row__title {
+    font-weight: var(--medium);
+    color: var(--gray-900);
+}
+
+.shoe-card__card__row__colors {
+    color: var(--gray-700);
+}
+
+.shoe-card__card__row__price.sale {
+    color: var(--gray-700);
+    text-decoration: line-through;
+}
+
+.shoe-card__card__row__new-price {
+    color: var(--primary);
+}

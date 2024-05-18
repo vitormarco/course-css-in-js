@@ -1,0 +1,27 @@
+body {
+    padding: 32px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border: 2px solid;
+    margin: 16px auto;
+}
+
+/* TODO: */
+
+.wrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    width: 300px;
+    margin-top: 16px;
+    align-self: center;
+}
