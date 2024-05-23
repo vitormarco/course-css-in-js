@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./5_02_media_query.css">
+    <style>
+        /* 
+            * There are two pattern to write media queries
+            * Mobile-first and Desktop-first
+            * When we choose a pattern, we need to avoid mixing pattern.
+
+            @media (max-width: 600px) {
+                .desktop {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 601px) {
+                .mobile {
+                    display: none
+                }
+            }
+
+            this code, need to be write in one pattern, for example
+        */
+
+        /* 
+            * If your application is desktop-firt  
+            .mobile {
+                display: none;
+            }
+
+            @media (max-width: 37.5rem) {
+                .mobile {
+                    display: flex;
+                }
+
+                .desktop {
+                    display: none;
+                }
+            }
+        */
+
+        /* If your application is mobile-first */
+            .desktop {
+                display: none;
+            }
+
+        @media (min-width: 37.5625rem) {
+            .desktop {
+                display: flex;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="mobile">
+            mobile
+        </section>
+        <section class="desktop">
+            desktop
+        </section>
+    </main>
+</body>
+</html>
