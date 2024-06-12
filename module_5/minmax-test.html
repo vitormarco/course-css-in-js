@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        section {
+            min-height: 300px;
+            background: deeppink;
+        }
+
+        .min {
+            /* 
+             * Irá retornar o menor valor
+             * ou seja, se o view port for menor que 32px, ele irá retornar, o view port
+             * caso viewport seja maior, por exemplo, 65px, ele irá retornar 32px
+            */
+            padding: min(32px, 5vw)
+        }
+        .max {
+            /* 
+             * Já o max, ele funcionara de forma contrária, sempre retornando
+             * o maior valor, se o view port for 17px, então retorna 32px
+             * se o view port for 64px, ele irá retornar o 64px 
+            */
+            padding: max(32px, 5vw)
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="min">MIN</section>
+        <section class="max">MAX</section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Minimum 1.5rem, when 700px or smaller -->
+    <!-- Maximum 3rem, when 1000px or larger -->
+    <!-- use: https://modern-fluid-typography.vercel.app/ -->
+
+    <!-- slop=fluid_size
+    r=relative_size
+
+    slop = (max_size-min_size)/(max_width-min_width) 
+
+    3rem = 48px
+    1.5rem = 24px 
+
+    slop = 48px-24px/1000-700
+    slop = 24px/300px
+    slop = 0.08 * 100
+    slop = 8
+
+    r=(min_width*max_size - max_width*min_size)/(min_width - max_width)
+
+    r= 700*48 - 1000*24 / 700 - 1000
+
+    r = 33600 - 24000 / -300 
+    r = 9600 / -300
+    r = -32
+    r=-32/16
+    r=-2rem -->
+
+    <style>
+        h2 {
+            font-size: clamp(
+                1.5rem,
+                8vw - 2rem,
+                3rem
+            );
+        }
+    </style>
+</head>
+<body>
+    <h2>Tweak Me</h2>
+</body>
+</html>

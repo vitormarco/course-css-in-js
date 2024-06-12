@@ -56,7 +56,7 @@ table {
     --normal: 500;
     --medium: 600;
     --bold: 800;
-    --display: 'block'
+    --display: 'block';
 }
 
 *, *::before, *::after {
