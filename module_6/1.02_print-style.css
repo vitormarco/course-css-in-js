@@ -1,0 +1,40 @@
+.wrapper {
+    max-width: 64rem;
+    margin: 32px auto;
+    border: 2px solid hsl(35deg 10% 40%);
+    columns: 2;
+    column-gap: 150px;
+    padding: 50px;
+    background: linear-gradient(
+      to right,
+      hsl(35deg, 30%, 90%),
+      hsl(35deg, 30%, 90%) 47%,
+      hsl(35deg, 30%, 70%) 49.5%,
+      hsl(35deg, 30%, 50%) 50%,
+      hsl(35deg, 30%, 70%) 50.5%,
+      hsl(35deg, 30%, 90%) 53%,
+      hsl(35deg, 30%, 90%)
+    );
+  }
+  
+  .wrapper p {
+    text-indent: 2em;
+    text-align: justify;
+  }
+  
+  .wrapper p:first-of-type {
+    text-indent: 0;
+  }
+  .wrapper p:first-of-type::first-letter {
+    initial-letter: 2;
+    margin-right: 0.2rem;
+  }
+  
+  .wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+  
+  * {
+    font-family: 'Merriweather', serif;
+  }
