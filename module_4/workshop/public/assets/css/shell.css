@@ -136,3 +136,31 @@
 .left-column__sidebar__link.ative {
     color: var(--primary);
 }
+
+.left-column__breadcrumbs.mobile-breadcrumb {
+    display: none;
+}
+
+@media (max-width: 	59.375rem) {
+    .left-column__breadcrumbs.desktop-breadcrumb {
+        display: none;
+    }
+
+    .left-column__breadcrumbs.mobile-breadcrumb {
+        display: flex;
+    }
+
+    .main-column__header {
+        align-items: flex-end;
+    }
+
+    .left-column {
+        display: none;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    .main-column__header__select {
+        display: none;
+    }
+}

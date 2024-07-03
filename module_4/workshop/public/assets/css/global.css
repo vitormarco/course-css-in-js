@@ -109,3 +109,15 @@ main {
         outline: none;
     }
 }
+
+@media (max-width: 59.375rem) {
+    main {
+        padding: 48px 32px;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    main {
+        padding: 48px 16px;
+    }
+}
