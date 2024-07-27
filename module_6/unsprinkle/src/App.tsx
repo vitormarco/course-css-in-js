@@ -1,9 +1,28 @@
+import styled from "styled-components"
+
+import GlobalStyles from "./assets/GlobalStyles"
+import Header from "./components/Header"
+import Hero from './components/Hero'
+
+
 function App() {  
   return (
     <>
-      <h1>Hello World!</h1>
+      <HeaderWrapper>
+        <Header />
+      </HeaderWrapper>
+      <main>
+        <Hero />
+      </main>
+      <GlobalStyles />
     </>
   )
 }
+
+const HeaderWrapper = styled.div`
+  position: sticky;
+  z-index: 2;
+  top: 0;
+`
 
 export default App
