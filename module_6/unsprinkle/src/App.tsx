@@ -3,6 +3,7 @@ import styled from "styled-components"
 import GlobalStyles from "./assets/GlobalStyles"
 import Header from "./components/Header"
 import Hero from './components/Hero'
+import MainContent from "./components/MainContent"
 
 
 function App() {  
@@ -13,6 +14,7 @@ function App() {
       </HeaderWrapper>
       <main>
         <Hero />
+        <MainContent />
       </main>
       <GlobalStyles />
     </>
