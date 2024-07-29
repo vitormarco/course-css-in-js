@@ -11,6 +11,7 @@ export const Image = styled.img`
     height: 300px;
     border-radius: 2px;
     margin-bottom: 8px;
+    object-fit: cover;
 `
 export const Tags = styled.ul`
     display: flex;
