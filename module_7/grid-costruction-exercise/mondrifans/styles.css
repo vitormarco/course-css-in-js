@@ -1,0 +1,42 @@
+body {
+    background: hsl(0deg 0% 2%);
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    --blue: hsl(250deg 100% 55%);
+    --yellow: hsl(50deg 100% 50%);
+    --red: hsl(350deg 100% 45%);
+    --white: hsl(0deg 0% 100%);
+}
+
+/* TODO: SPECIFICATION  */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px 1fr;
+    gap: 16px 32px;
+    min-height: 100svh;
+}
+
+.blue-box {
+    background-color: var(--blue);
+}
+
+header {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 8px 16px;
+}
+
+.red-box {
+    background-color: var(--red);
+}
+
+main {
+    background-color: var(--white);
+}
