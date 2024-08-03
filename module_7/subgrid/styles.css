@@ -1,0 +1,13 @@
+.grid {
+    border: 2px solid hsl(24deg 95% 50%);
+    border-radius: 5px;
+    background-color: hsl(33deg 100% 95%)
+}
+.item {
+    border: 2px solid hsl(31deg  100% 65%);
+    border-radius: 5px;
+    background-color: hsl(33deg 100% 83%);
+}
+.subitem {
+    background-color: hsl(133deg 87% 54%);
+}    
