@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        /* TODO */
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 4rem 1fr 5rem;
+            min-height: 100svh;
+            grid-template-areas: 
+                'header header header'
+                'nav main ad'
+                'footer footer footer';
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: ad;
+        }
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <nav></nav>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
