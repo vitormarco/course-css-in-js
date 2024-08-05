@@ -1,0 +1,70 @@
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'sidebar main'
+        'footer footer'
+    ;
+    grid-template-columns: 14rem 1fr;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+    height: var(--header-height);
+    border-bottom: 3px solid;
+    display: grid;
+    place-content: center;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+    min-height: 180vh;
+    border: 3px solid;
+}
+
+footer {
+    grid-area: footer;
+    height: 5rem;
+    border-top: 3px solid;
+    display: grid;
+    place-content: center;
+}
+
+
+.grid {
+    --header-height: 5rem;
+    --inner-padding: 8px;
+    isolation: isolate;
+}
+
+.grid > * {
+    padding: var(--inner-padding);
+}
+
+
+/* TODO: Holy grail sticky solution */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+aside {
+    position: relative;
+    z-index: 1;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + (var(--inner-padding) * 3));
+}
