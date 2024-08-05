@@ -1,0 +1,41 @@
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 32px 0;
+}
+
+p {
+    margin: 16px 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* TODO: full-bleed code */
+.wrapper {
+    --gutter-inline: 16px;
+    display: grid;
+    grid-template-columns: 1fr min(60ch, 100%) 1fr;
+    padding-inline: var(--gutter-inline);
+}
+
+.wrapper > * {
+    grid-column: 2;
+}
+
+.full-bleed {
+    grid-column: 1 / -1;
+    margin-inline: calc(var(--gutter-inline) * -1);
+}
+
+.meerkat {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
