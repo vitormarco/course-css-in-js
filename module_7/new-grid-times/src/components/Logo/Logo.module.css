@@ -1,0 +1,14 @@
+.wrapper {
+    text-align: center;
+}
+
+.link {
+    font-family: var(--font-family-logo);
+    font-size: 3rem;
+}
+
+.todaysDate {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+    margin-top: -1rem;
+}

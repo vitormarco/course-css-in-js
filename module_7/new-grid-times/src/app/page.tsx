@@ -1,11 +1,17 @@
 import Advertisement from "@/components/Advertisement";
+import Header from "@/components/Header";
 
 function Home() {
   return (
-    <main>
-      <Advertisement />
-      <h1>Hello World</h1>
-    </main>
+    <>
+      {/* TODO: HEADER */}
+      <Header />
+      {/* TODO: MaxWidthWrapper */}
+        {/* TODO: MainStoryGrid */}
+        {/* TODO: SpecialtyStoryGrid */}
+      {/* TODO: Spacer */}
+      {/* TODO: Footer */}
+    </>
   );
 }
 

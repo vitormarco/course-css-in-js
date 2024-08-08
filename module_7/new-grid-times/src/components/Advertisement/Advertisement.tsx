@@ -1,10 +1,11 @@
+import React from 'react'
 import styles from './Advertisement.module.css'
 
-const Advertisement = () => {
+const Advertisement = (props: React.HTMLAttributes<HTMLDivElement>) => {
     return (
-        <div>
-            <p></p>
-            <div></div>
+        <div className={styles.wrapper} {...props}>
+            <p>Advertisement</p>
+            <div className={styles.box} />
         </div>
     )
 }
