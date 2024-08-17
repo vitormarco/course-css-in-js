@@ -14,9 +14,14 @@
   grid-area: main-story;
 }
 
-.secondaryStorySection {}
+.secondaryStorySection {
+  grid-area: secondary-stories;
+}
 
-.storyList {}
+.storyList {
+  display: flex;
+  flex-direction: column;
+}
 
 .optionSection {}
 

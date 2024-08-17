@@ -7,6 +7,7 @@ function Home() {
     <>
       <Header />
       <div className="max-width-wrapper">
+        {/* TODO: MainStoryGRID */}
         <MainStoryGrid />
         {/* TODO: SpecialtyStoryGrid */}
       </div>
