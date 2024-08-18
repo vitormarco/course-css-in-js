@@ -23,7 +23,11 @@
   flex-direction: column;
 }
 
-.optionSection {}
+.opinionSection {
+  grid-area: opinion-stories;
+}
 
-.advertisementSection {}
+.advertisementSection {
+  grid-area: advertisement;
+}
 
