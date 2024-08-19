@@ -31,4 +31,13 @@ const MARKET_DATA = [
   },
 ];
 
+export const STOCK_GRAPHS_BY_TICKER_SYMBOL = {
+  AAPL: '/images/stock-graph-up-1.svg',
+  AMC: '/images/stock-graph-up-2.svg',
+  ENB: '/images/stock-graph-down-1.svg',
+  GOOG: '/images/stock-graph-up-3.svg',
+  AMZN: '/images/stock-graph-down-2.svg',
+  MSFT: '/images/stock-graph-down-3.svg',  
+}
+
 export default MARKET_DATA;

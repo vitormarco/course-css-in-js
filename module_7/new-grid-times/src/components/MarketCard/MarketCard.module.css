@@ -1,0 +1,44 @@
+.wrapper {
+  display: block;
+  padding: 6px 12px 8px;
+  color: var(--color-gray-900);
+  background: var(--color-white);
+  box-shadow: 2px 4px 12px hsl(0deg 0% 0% / 0.1);
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tickerSymbol {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-sans-serif);
+}
+
+.graphWrapper {
+  min-width: 0;
+  
+}
+
+.graph {
+  display: block;
+  width: 100%;
+  height: 20px;
+}
+
+.exchange {
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+  font-family: var(--font-family-sans-serif);
+}
+
+.percentage {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-sans-serif);
+  color: var(--color);
+}

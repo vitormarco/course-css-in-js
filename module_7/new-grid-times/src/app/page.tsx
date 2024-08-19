@@ -1,15 +1,15 @@
 import Advertisement from "@/components/Advertisement";
 import Header from "@/components/Header";
 import MainStoryGrid from "@/components/MainStoryGrid";
+import SpecialtyStoryGrid from "@/components/SpecialtyStoryGrid";
 
 function Home() {
   return (
     <>
       <Header />
       <div className="max-width-wrapper">
-        {/* TODO: MainStoryGRID */}
         <MainStoryGrid />
-        {/* TODO: SpecialtyStoryGrid */}
+        <SpecialtyStoryGrid />
       </div>
       {/* TODO: Spacer */}
       {/* TODO: Footer */}
