@@ -1,0 +1,7 @@
+.spacer {
+  display: block;
+  width: var(--width);
+  min-width: var(--min-width);
+  height: var(--height);
+  min-height: var(--min-height);
+}

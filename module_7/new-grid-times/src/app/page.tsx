@@ -1,6 +1,6 @@
-import Advertisement from "@/components/Advertisement";
 import Header from "@/components/Header";
 import MainStoryGrid from "@/components/MainStoryGrid";
+import Spacer from "@/components/Spacer";
 import SpecialtyStoryGrid from "@/components/SpecialtyStoryGrid";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
         <MainStoryGrid />
         <SpecialtyStoryGrid />
       </div>
-      {/* TODO: Spacer */}
+      <Spacer size={64} />
       {/* TODO: Footer */}
     </>
   );
