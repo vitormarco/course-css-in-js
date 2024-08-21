@@ -4,13 +4,12 @@ import Link from 'next/link'
 import { ImageType } from '@/types/image'
 import styles from './MainStory.module.css'
 
-interface IMainStoryProps {
+interface IMainStoryProps extends React.HTMLAttributes<HTMLDivElement> {
     id: string
     title: string
     image: ImageType
     location: string
     abstract: string
-    delegate?: React.HTMLAttributes<HTMLDivElement>
 }
 
 const MainStory = ({
@@ -19,10 +18,10 @@ const MainStory = ({
     image,
     location,
     abstract,
-    delegate
+    ...delegated
 }: IMainStoryProps) => {
     return (
-        <article {...delegate} className={styles.wrapper}>
+        <article {...delegated} className={styles.wrapper}>
             <Link href={`/story/${id}`} >
                 <picture>
                     <source 
