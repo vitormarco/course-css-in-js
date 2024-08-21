@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainStoryGrid from "@/components/MainStoryGrid";
 import Spacer from "@/components/Spacer";
@@ -12,7 +13,7 @@ function Home() {
         <SpecialtyStoryGrid />
       </div>
       <Spacer size={64} />
-      {/* TODO: Footer */}
+      <Footer />
     </>
   );
 }
