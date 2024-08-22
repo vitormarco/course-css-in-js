@@ -6,6 +6,14 @@
   gap: 4px 16px;
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
+ 
+  @media (min-width: 34.375rem) and (max-width: 68.6875rem) {
+    grid-template-areas: 
+      'image'
+      'heading'
+      'abstract';
+    grid-template-columns: 1fr;
+  }
 }
 
 .picture {

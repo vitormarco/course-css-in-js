@@ -18,7 +18,7 @@ const SecondaryStory = ({
 }: ISecondaryStoryProps) => {
   return (
     <Link href={`/story/${id}`}>
-      <article className={styles.wrapper}>
+      <article className={`${styles.wrapper} teste`}>
         <picture className={styles.picture}>
           <source 
             type="image/avif" 

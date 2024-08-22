@@ -25,9 +25,9 @@ const MainStoryGrid = () => {
             </section>
             <section className={styles.opinionSection}>
                 <SectionTitle>Opinion</SectionTitle>
-                <div className={styles.storyList}>
+                <div className={`${styles.storyList} ${styles.opinionStoryList}`}>
                     {OPINION_STORIES.map(story => (
-                        <div  key={story.id} className={styles.verticalStoryWrapper}>
+                        <div  key={story.id} className={`${styles.verticalStoryWrapper} ${styles.opinionStoryWrapper}`}>
                             <OpinionStory {...story} />
                         </div>
                     ))}
