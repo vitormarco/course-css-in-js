@@ -5,6 +5,10 @@
 .link {
     font-family: var(--font-family-logo);
     font-size: 3rem;
+
+    @media (min-width: 34.375rem) {
+        font-size: 4rem;
+    }
 }
 
 .todaysDate {

@@ -9,7 +9,6 @@ export const metadata = {
 }
 
 const crimson = Crimson_Pro({
-  weight: ['200', '900'],
   style: ['italic', 'normal'],
   display: 'fallback',
   subsets: ['latin'],

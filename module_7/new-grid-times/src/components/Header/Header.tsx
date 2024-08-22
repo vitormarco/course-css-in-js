@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Button from '../Button';
 import Menu from '../Icons/Menu';
 import Search from '../Icons/Search';
 import User from '../Icons/User';
@@ -13,8 +15,6 @@ const Header = () => {
                         <button>
                             <Search size={24} /> 
                         </button>
-                    </div>
-                    <div className={styles.actionGroup}>
                         <button>
                             <Menu size={24} />
                         </button>
@@ -26,8 +26,22 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.mainHeader}>
+            <div className={`${styles.mainHeader} max-width-wrapper`}>
+                <div className={`${styles.actionGroup} ${styles.actionDesktop} ${styles.onlyDesktop}`}>
+                    <button>
+                        <Search size={24} /> 
+                    </button>
+                    <button>
+                        <Menu size={24} />
+                    </button>
+                </div>
                 <Logo />
+                <div className={styles.subscribeWrappper}>
+                    <Button>Subscribe</Button>
+                    <Link href="/" className={styles.subLink}>
+                        Already a subscriber?
+                    </Link>
+                </div>
             </div>
         </header>
     )
