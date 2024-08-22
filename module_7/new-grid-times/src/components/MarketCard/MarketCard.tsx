@@ -20,10 +20,11 @@ const MarketCard = ({
       ? 'var(--color-secondary)'
       : 'var(--color-urgent)'
 
+
   return (
     <span className={styles.wrapper}>
       <div className={styles.row}>
-        <p className={styles.tickerSymbol}></p>
+        <p className={styles.tickerSymbol}>{tickerSymbol}</p>
         <div className={styles.graphWrapper}>
           <picture>
             <img alt="" src={graphSrc} className={styles.graph} />

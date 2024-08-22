@@ -17,7 +17,9 @@ const MainStoryGrid = () => {
             <section className={styles.secondaryStorySection}>
                 <div className={styles.storyList}>
                     {SECONDARY_STORIES.map(story => (
-                        <SecondaryStory key={story.id} {...story} />
+                        <div  key={story.id} className={styles.verticalStoryWrapper}>
+                            <SecondaryStory {...story} />
+                        </div>
                     ))}
                 </div>
             </section>
@@ -25,7 +27,9 @@ const MainStoryGrid = () => {
                 <SectionTitle>Opinion</SectionTitle>
                 <div className={styles.storyList}>
                     {OPINION_STORIES.map(story => (
-                        <OpinionStory key={story.id} {...story} />
+                        <div  key={story.id} className={styles.verticalStoryWrapper}>
+                            <OpinionStory {...story} />
+                        </div>
                     ))}
                 </div>
             </section>
@@ -36,4 +40,4 @@ const MainStoryGrid = () => {
     )
 }
 
-export default MainStoryGrid
+export default MainStoryGrid;

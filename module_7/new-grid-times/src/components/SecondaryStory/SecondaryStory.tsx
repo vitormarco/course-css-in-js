@@ -19,7 +19,7 @@ const SecondaryStory = ({
   return (
     <Link href={`/story/${id}`}>
       <article className={styles.wrapper}>
-        <picture>
+        <picture className={styles.picture}>
           <source 
             type="image/avif" 
             srcSet={`
@@ -34,10 +34,12 @@ const SecondaryStory = ({
               ${image.src.replace('.jpg', '@2x.jpg')} 2x
             `}
           />
-          <img src={image.src} alt={image.alt} className={styles.image} />
+          <img src={image.src} alt={image.alt}  />
         </picture>
         <h2 className={styles.heading}>{title}</h2>
-        <p className={styles.abstract}>{abstract}</p>
+        <div className={styles.abstractWrapper}>
+          <p className={styles.abstract}>{abstract}</p>
+        </div>
       </article>
     </Link>
   )

@@ -8,6 +8,13 @@
   height: 48px;
   border-radius: 100vmax;
   object-fit: cover;
+  float: right;
+  margin-left: 16px;
+
+  @media (min-width: 34.375rem) and (max-width: 68.6875rem) {
+    float: revert;
+    margin-left: revert;
+  }
 }
 
 .authorName {

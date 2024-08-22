@@ -19,6 +19,20 @@
     font-size: 1rem;
     margin-bottom: 1em;
     white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    /* Necessary for line-clamp */
+    overflow: hidden;
+
+    @media (min-width: 34.375rem) {
+        -webkit-line-clamp: 16;
+    }
+
+    @media (min-width: 68.75rem) {
+        -webkit-line-clamp: 10;
+    }
 }
 
 .location {
