@@ -23,7 +23,7 @@ const SpecialtyStoryGrid = () => {
           ))}
         </div>
       </section>
-      <section className={styles.sportsSection}>
+      <section>
         <SectionTitle
           cornerLink={{
             href: '/sports',
